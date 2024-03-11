@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Header Logo.png" alt="logo de alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea id="texto-encriptado" class="campo-texto" placeholder="Texto a encriptar..."></textarea>
+            <div>
+                <h6 class=" restricciones"> Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones" onclick="comprobarVacio()">
+                <button class="btn-Encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-Desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="campo-mensaje">
+            <div class="mensaje" style="background-image:url(/img/Rectangle\ 1.png);"></div>
+            <textarea id="campo-mensaje" class="mensaje-encriptado" style="visibility: hidden;">
+               </textarea>
+            <div>
+                <button id="copiarTexto" class="btn-Copiar" onclick="btnCopiar()"
+                    style="visibility: hidden;">Copiar</button> <span id="copiaTexto"></span>
+            </div>
+        </section>
+    </main>
+    <footer>Realizado por Emmanuel Ruiz - ONE Alura G6</footer>
+    <script src="funciones.js"></script>
+</body>
+
+</html>
